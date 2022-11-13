@@ -1,6 +1,6 @@
 {
   "name": "copy-google-fonts",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Avin Lambrero",
   "license": "MIT",
   "main": "dist/index.cjs",
@@ -22,7 +22,7 @@
     "prepublishOnly": "yarn run build"
   },
   "bin": {
-    "google-fonts-downloader": "bin/google-fonts-downloader.js"
+    "copy-google-fonts": "bin/copy-google-fonts.js"
   },
   "dependencies": {
     "cac": "^6.7.14",
