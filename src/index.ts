@@ -35,10 +35,10 @@ export class GoogleFontsDownloader {
       let match: RegExpMatchArray | null;
 
       if ((match = line.match(/^\/\* (.*) \*\/$/))) {
-        unicodeRange = match[1].replace(/\s/g, '');
+        unicodeRange = match[1].replace(/\s/g, '_');
       }
       if ((match = line.match(/\s*font-family: '(.*)';/))) {
-        family = match[1].replace(/\s/g, '');
+        family = match[1].replace(/\s/g, '_');
       }
       if ((match = line.match(/\s*font-style: (.*);/))) {
         style = match[1];
